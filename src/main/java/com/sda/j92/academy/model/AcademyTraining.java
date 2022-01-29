@@ -20,11 +20,4 @@ public class AcademyTraining {
     private int length;
 
     private String trainer;
-
-    // trainings - nazwa pola w klasie TrainingAttendee
-    //  podajemy ją żeby Hibernate "wiedział" że jest to wzajemna relacja
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Set<TrainingAttendee> attendees;
 }

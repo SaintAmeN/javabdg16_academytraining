@@ -21,5 +21,4 @@ public class TrainingDto {
     private int length;
 
     private String trainer;
-    private Set<TrainingAttendee> attendees;
 }
